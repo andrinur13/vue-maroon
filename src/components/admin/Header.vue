@@ -30,6 +30,7 @@
 </template>
 
 <script>
+import '../../assets/assets/js/main.js'
 
 export default {
     name: 'Header',

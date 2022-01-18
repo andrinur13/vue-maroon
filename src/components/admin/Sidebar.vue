@@ -41,33 +41,35 @@
 </template>
 
 <script>
-// const mylib = require('../../assets/assets/js/main.js')
+import 'jquery'
+import '../../assets/assets/js/main.js';
+
 export default {
     name: 'Sidebar',
     
     mounted(){
-        this.sidebar()
+        // this.sidebar()
     },
     methods: {
-        sidebar(){
-            const menuToggle = document.querySelector('#menuToggle');
-            menuToggle.addEventListener("click", function(){ 
-                var windowsWidth = window.document.innerWidth;
-                if(windowsWidth < 1010){
-                    const body = document.querySelector('body');
-                    body.classList.remove('open')
-                    const lf_panel = document.querySelector('#left-panel')
-                    if (windowsWidth<760){
-                        lf_panel.style.display = "block"
-                    } else {
-                        lf_panel.classList.toggle('open-menu')
-                    } 
-                }else{
-                    const body = document.querySelector('body');
-                    body.classList.toggle('open')
-                }
-            })
-        },
+        // sidebar(){
+        //     const menuToggle = document.querySelector('#menuToggle');
+        //     menuToggle.addEventListener("click", function(){ 
+        //         var windowsWidth = window.document.innerWidth;
+        //         if(windowsWidth < 1010){
+        //             const body = document.querySelector('body');
+        //             body.classList.remove('open')
+        //             const lf_panel = document.querySelector('#left-panel')
+        //             if (windowsWidth<760){
+        //                 lf_panel.style.display = "block"
+        //             } else {
+        //                 lf_panel.classList.toggle('open-menu')
+        //             } 
+        //         }else{
+        //             const body = document.querySelector('body');
+        //             body.classList.toggle('open')
+        //         }
+        //     })
+        // },
     }
 }
 </script>

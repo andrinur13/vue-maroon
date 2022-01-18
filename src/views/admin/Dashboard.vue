@@ -180,25 +180,13 @@ export default {
         }
     },
     mounted(){
-        this.loadsize(),
         axios.get('https://apimaroon.zainportfolio.com/kader').then(rp => {
             this.countKader = rp.data
             return this.countKader
         })
     },
     methods: {
-        loadsize(){
-            window.document.addEventListener("resize", function(){
-                var windowsWidth = window.document.innerWidth;
-                if(windowsWidth<1010){
-                    const body = document.querySelector('body');
-                    body.classList.add('small-device')
-                }else{
-                    const body = document.querySelector('body');
-                    body.classList.remove('small-device')
-                }
-            });
-        }
+        
     },
     
 }
